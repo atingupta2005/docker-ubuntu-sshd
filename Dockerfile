@@ -25,11 +25,13 @@ RUN useradd -ms /bin/bash $SSH_USERNAME
 # Set up SSH configuration
 RUN mkdir -p /home/$SSH_USERNAME/.ssh && chown $SSH_USERNAME:$SSH_USERNAME /home/$SSH_USERNAME/.ssh \
     && echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config \
-    && echo "PermitRootLogin no" >> /etc/ssh/sshd_config
+    && echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
 # Copy the script to configure the user's password and authorized keys
 COPY configure-ssh-user.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/configure-ssh-user.sh
+RUN apt update
+RUN apt install -y vim nano tree
 
 # Start SSH server
 CMD ["/usr/local/bin/configure-ssh-user.sh"]
