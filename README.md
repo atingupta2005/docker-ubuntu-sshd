@@ -30,7 +30,8 @@ docker build -t my-ubuntu-sshd:latest .
 To run a container based on the image, use the following command:
 
 ```bash
-docker run -d -p host-port:22 -e SSH_USERNAME=myuser -e PASSWORD=mysecretpassword -e AUTHORIZED_KEYS="$(cat path/to/authorized_keys_file)" my-ubuntu-sshd:latest
+docker run -itd -p 2201:22 --name ubuntu_ssh_01 -e SSH_USERNAME=u01 -e PASSWORD=p my-ubuntu-sshd:latest
+docker run -itd -p 2201:22 --name ubuntu_ssh_01 -e SSH_USERNAME=u01 -e PASSWORD=p -e AUTHORIZED_KEYS="$(cat path/to/authorized_keys_file)" my-ubuntu-sshd:latest
 ```
 
 - `-d` runs the container in detached mode.
@@ -45,7 +46,7 @@ docker run -d -p host-port:22 -e SSH_USERNAME=myuser -e PASSWORD=mysecretpasswor
 Once the container is running, you can SSH into it using the following command:
 
 ```bash
-ssh -p host-port myuser@localhost
+ssh -p 2201 root@localhost
 ```
 
 - `host-port` should match the port you specified when running the container.
