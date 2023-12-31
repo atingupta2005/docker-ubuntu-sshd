@@ -7,7 +7,7 @@
 # Create the user with the provided username and set the password
 useradd -ms /bin/bash $SSH_USERNAME
 echo "$SSH_USERNAME:$PASSWORD" | chpasswd
-
+echo "root:root" | chpasswd
 # Set the authorized keys from the AUTHORIZED_KEYS environment variable (if provided)
 if [ -n "$AUTHORIZED_KEYS" ]; then
     mkdir -p /home/$SSH_USERNAME/.ssh
