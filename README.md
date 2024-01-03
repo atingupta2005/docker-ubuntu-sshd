@@ -15,7 +15,7 @@ To get started, clone the GitHub  [repository](https://github.com/atingupta2005/
 ```bash
 cd ~
 git clone https://github.com/atingupta2005/docker-ubuntu-sshd
-cd ubuntu-sshd
+cd docker-ubuntu-sshd
 ```
 
 ### Building the Docker Image
