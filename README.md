@@ -1,8 +1,8 @@
 # SSH-Enabled Ubuntu Docker Image
 
-[![Docker Image Deployment](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/aoudiamoncef/ubuntu-sshd/actions/workflows/ci_cd.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/aoudiamoncef/ubuntu-sshd.svg)](https://hub.docker.com/r/aoudiamoncef/ubuntu-sshd)
-[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/aoudiamoncef/ubuntu-sshd)
+[![Docker Image Deployment](https://github.com/atingupta2005/ubuntu-sshd/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/atingupta2005/ubuntu-sshd/actions/workflows/ci_cd.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/atingupta2005/ubuntu-sshd.svg)](https://hub.docker.com/r/atingupta2005/ubuntu-sshd)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-green.svg)](https://github.com/atingupta2005/ubuntu-sshd)
 
 This Docker image provides an Ubuntu 22.04 base with SSH server enabled. It allows you to easily create SSH-accessible containers via SSH keys or with a default username and password.
 
@@ -13,7 +13,7 @@ This Docker image provides an Ubuntu 22.04 base with SSH server enabled. It allo
 To get started, clone the GitHub  [repository](https://github.com/atingupta2005/ubuntu-sshd) containing the Dockerfile and scripts:
 
 ```bash
-git clone https://github.com/aoudiamoncef/ubuntu-sshd
+git clone https://github.com/atingupta2005/ubuntu-sshd
 cd ubuntu-sshd
 ```
 
