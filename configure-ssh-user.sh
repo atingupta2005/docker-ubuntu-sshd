@@ -6,6 +6,7 @@
 
 # Create the user with the provided username and set the password
 useradd -ms /bin/bash $SSH_USERNAME
+usermod -aG sudo $SSH_USERNAME
 echo "$SSH_USERNAME:$PASSWORD" | chpasswd
 echo "root:root" | chpasswd
 # Set the authorized keys from the AUTHORIZED_KEYS environment variable (if provided)
