@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get install -y openssh-server iputils-ping telnet iproute2\
     && apt-get clean \
     && apt-get -y install sudo \
-    && apt-get -y install curl wget nano vim \
+    && apt-get -y install curl wget nano vim gnupg\
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Create the privilege separation directory and fix permissions
