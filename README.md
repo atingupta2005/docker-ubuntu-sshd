@@ -14,13 +14,13 @@ To get started, clone the GitHub  [repository](https://github.com/atingupta2005/
 
 ```bash
 cd ~
-git clone https://github.com/atingupta2005/ubuntu-sshd
+git clone https://github.com/atingupta2005/docker-ubuntu-sshd
 cd ubuntu-sshd
 ```
 
 ### Building the Docker Image
 
-Build the Docker image from within the cloned repository directory:
+Buld the Docker image from within the cloned repository directory:
 
 ```bash
 docker build -t my-ubuntu-sshd:latest .
