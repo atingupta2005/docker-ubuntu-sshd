@@ -10,7 +10,7 @@ This Docker image provides an Ubuntu 22.04 base with SSH server enabled. It allo
 
 ### Cloning the Repository
 
-To get started, clone the GitHub  [repository](https://github.com/aoudiamoncef/ubuntu-sshd) containing the Dockerfile and scripts:
+To get started, clone the GitHub  [repository](https://github.com/atingupta2005/ubuntu-sshd) containing the Dockerfile and scripts:
 
 ```bash
 git clone https://github.com/aoudiamoncef/ubuntu-sshd
