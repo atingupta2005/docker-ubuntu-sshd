@@ -64,6 +64,7 @@ Once the container is running, you can SSH into it using the following command:
 
 ```bash
 ssh -p 2201 root@localhost
+#Password is root
 ```
 
 - `host-port` should match the port you specified when running the container.
